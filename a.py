@@ -1,14 +1,18 @@
 import web
 
 urls=(
-    '/','index'
+    '/','first',
+    '/second','second'
 )
 render=web.template.render('templates')
 
-class index:
+class first:
     def GET(self):
-        return render.index()
-
+        return render.first()
+    def POST(self):
+        return web.redirect("http://www.baidu.com")
+    
+    
 if __name__=="__main__":
     app=web.application(urls,globals())
     app.run()
