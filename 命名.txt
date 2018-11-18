@@ -1,3 +1,4 @@
+first：首页
 second：自由配装
 third：技能配装
 forth：装备一览
