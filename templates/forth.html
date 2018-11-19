@@ -22,11 +22,14 @@
 		#main{
 			background:url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3270219037,801969338&fm=26&gp=0.jpg);
 			background-size:cover;
-			height:84%;
+			height:88%;
 			filter:alpha(Opacity=60);
             -moz-opacity:0.6;
             opacity: 0.6;
 		}
+        #table{
+            background:rgba(207, 203, 203, 0.7);
+        }
 		#nav{
 			height:50px;
 		}
@@ -55,14 +58,18 @@
     </div>
     <div>
         <ul id="nav" class="nav navbar-nav">
-            <li class="active"><a href="/">数据图</a></li>
+            <li class="active"><a href="/">推荐配装</a></li>
+            <li class="active"><a href="/">技能配装</a></li>
             <li class="dropdown">
                 <a href="/" class="dropdown-toggle" data-toggle="dropdown">
-                    数据对比 <b class="caret"></b>
+                    装备一览<b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="/">男女对比</a></li>
-                    <li><a href="/">城乡对比</a></li>
+                    <li><a href="/">头部</a></li>
+                    <li><a href="/">胸部</a></li>
+                    <li><a href="/">手臂</a></li>
+                    <li><a href="/">腰部</a></li>
+                    <li><a href="/">腿部</a></li>
                 </ul>
             </li>
         </ul>
@@ -73,28 +80,39 @@
     -->
     <div id="body">
         <div id="main">
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>名称</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+            <div id="table" class="table-responsive">
+                <!--尝试改动背景和透明度，失败-->
+                <table class="table">
+                  <strong>
+                  <caption><center><font color="black" size=10>头部装备</font></center></caption>
+                  <thead>
+                    <tr>
+                      <th><font size=5>名称</font></th>
+                      <th><font size=5>rare</font></th>
+                      <th><font size=5>技能</font></th>
+                      <th><font size=5>属性</font></th>
+                      <th><font size=5>需要材料</font></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><font size=3>猎人头盔</font></td>
+                      <td>rare 1</td>
+                      <td></td>
+                      <td>防御：20 火耐性：3 毒耐性：-3</td>
+                      <td>石块*3</td>
+                    </tr>
+                  </tbody>
+                  </strong>
+                </table>
+            </div>
         </div>
-       
     </div>
 
 	<footer>
 			<div id="container" align="center">
 			<font color="#FF0000" size="5">
-				<p>制作者：徐章皓</p>
+				<p>制作者：</p>
 			</font>
 			</div>
 	</footer>
